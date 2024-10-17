@@ -1,52 +1,56 @@
-# Problem 1: Create and print a list
-# Task: Create a list called `fruits` containing "apple", "banana", "orange", "grape", and "strawberry".
-# Write a program that prints the entire list, then prints each fruit on a new line using a `for` loop.
+# Problem 1: Create a 2D list
+# Task: Create a 2D list called `matrix` representing the following table:
+# 1  2  3
+# 4  5  6
+# 7  8  9
+# Print the entire matrix, then print the first row and the last column.
 
 
 
 
-# Problem 2: Update and modify the list
-# Task: Start with the list from Problem 1. Update "banana" to "blueberry", remove "grape", 
-# and add "watermelon" to the end of the list. Print the modified list.
+# Problem 2: Modify the 2D list
+# Task: Starting with the `matrix` from Problem 1, update the value `5` to `10`
+# and add a new row [10, 11, 12]. Print the modified matrix.
 
 
 
 
-# Problem 3: Inserting and sorting
-# Task: Insert "mango" between "apple" and "blueberry". Sort the list alphabetically and print the result.
+# Problem 3: Seat assignment
+# Task: Create a 2D list that represents the seating arrangement of a classroom with 3 rows and 4 seats per row.
+# Assign students to 5 seats by placing their names in the list. Print the seating arrangement before and after.
 
 
 
 
-# Problem 4: List slicing
-# Task: Given the list `numbers = [5, 10, 15, 20, 25, 30, 35, 40]`, print the following:
-# - The first 4 elements
-# - The last 3 elements
-# - All elements except the first and last
+# Problem 4: Nested loops
+# Task: Write a program that prints all the elements in the `matrix` (from Problem 1) in a formatted grid using nested `for` loops.
 
 
 
 
 # Problem 5: Fix the code
-# The following code has a syntax error. Fix the error and make sure the program prints the expected output:
-# Expected Output: "grape"
+# The following code has a logic error and prints the wrong values from the matrix.
+# Fix the logic so it prints each element in row 2 (the second row).
+# Expected Output: 4 5 6
 
-fruits = ["apple", "orange", "banana", "grape"]
-print fruits[3
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for i in range(len(matrix[1])):
+    print(matrix[i][1])
+
+
 
 
 
 # Problem 6: Logic fix
-# This code attempts to remove all instances of "banana" from a list but doesn’t work as intended. Fix the logic.
-# Expected output: ["apple", "orange"]
+# The following code is supposed to change all the elements in the first row of the matrix to 0,
+# but it doesn't work as intended. Fix the error.
+# Expected Output: [[0, 0, 0], [4, 5, 6], [7, 8, 9]]
 
-fruits = ["banana", "apple", "banana", "orange", "banana"]
-lcv = 1
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for element in matrix:
+    element[0] = 0
+print(matrix)
 
-while lcv < len(fruits):
-    if fruits[lcv] != "banana":
-        del fruits[lcv]
-    lcv = lcv + 1
-    
-print(fruits)
+
+
 
