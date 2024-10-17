@@ -1,11 +1,13 @@
-#Example 1: Printing the numbers 1-9 in a 3x3 grid:
+#Example 1: Create an x/y chart with the values pre set in lists
 
 
 
-#Example 2: Creating a square:
+#Example 2: Create a new matrix and add 1 to each element:
 
 
 
-#Example 3: Creating a table showing 1-10 in the first row and their squares in the second row:
+#Example 3: Create a new thing that stores name, age, and IQ. Print this out.
 
 
+
+#Example 4: Creating a seating chart and update it
